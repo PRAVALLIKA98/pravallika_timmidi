@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(onne.jpg);
+  height: 100vh;
+  background-size:cover;
+  background-position:center;
+}
+
+* {
+  box-sizing: border-box;
+}
+.login_page{
+width:360px;
+padding:10% 0 0;
+margin:auto;
+}
+
+/* Add padding to containers */
+.form {
+  position:relative;
+  z-index:1;
+  background-color:pink ;
+  max-width:360px;
+  margin:0 auto 100px;
+  padding: 50px;
+  text-align:center;
+  
+}
+
+/* Full-width input fields */
+.form input{
+  font-family:"Roboto",sans-serif;
+  outline:1;
+  background:#f2f2f2;
+  width: 80%;
+  border:0;
+  margin: 0 0 15px;
+  padding: 20px;
+  box-sizing:border-box;
+  font-size:14px;
+}
+.form button{
+  font-family:"Roboto",sans-serif;
+  text-transform:uppercase;
+  outline:0;
+  background:#4CAF50;
+  width:80%;
+  border:0;
+  padding:20px;
+  color:#FFFFFF;
+  font-size:14px;
+  cursor:pointer;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  padding:5px;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+   <div class="login_page">
+   <div class="form">
+   <form class="register_form">
+    <h1>Brandico</h1><hr>
+    <input type="text" placeholder="Enter Product Name" name="Prod_name" required>
+	<br/>
+    <button>Search</button>
+    <br/><br/>
+   </form>
+   <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</div>
+</div>
+</body>
+</html>
