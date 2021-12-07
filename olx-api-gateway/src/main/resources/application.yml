@@ -1,0 +1,14 @@
+eureka:
+  client:
+    register-with-eureka: true    fetch-registry: true  instance:    hostname: localhost    instance-id: 
+instance-id: ${spring.application.name}:${random.uuid}
+
+spring:  application:    name: API-GATEWAY
+
+  cloud:    gateway:      routes:      - id: AUTH-SERVICE
+        uri: lb://AUTH-SERVICE
+        predicates:
+           - Path=/users/**
+      - id: ADVERTISE-SERVICE
+         uri:lb://ADVERTISE-SERVICE
+         predicates:- Path=/olx-adv/**
