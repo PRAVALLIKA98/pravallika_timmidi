@@ -1,8 +1,15 @@
-server:  port: 8888
+server:
+  port: 8888
 
-spring:  application:    name: configuration-server
-  cloud:    config:      server:        git:          uri: https://github.com/Pravallika42/olx-config
+spring:
+  application:
+    name: configuration-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Pravallika42/olx-config
           username: Pravallika42
-          password: Pravallika123@
+          password: ************
           clone-on-start: true
      
